@@ -44,6 +44,7 @@ html{
     filter: brightness(.4);
     position: absolute;
     transition: filter 1s;
+    user-select: none;
 }
 .landpage__divImg{
     height: 300px;

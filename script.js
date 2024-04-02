@@ -8,7 +8,7 @@ let bestqualities = [];
 //     scroll(0,0);
 // })
 
-const getImg = async() => {
+const getImg = () => {
     fetch("https://api.thecatapi.com/v1/images/search?size=med&mime_types=jpg&format=json&has_breeds=true&order=RANDOM&page=0&limit=1",{
         method: "GET",
         headers: {"x-api-key":"live_LpcOOa2VUTBXwXsRz3h1r3iyjibZtUVDGvyna8TkQy814hIixStPaRWwYvxf6r39"}
@@ -104,10 +104,6 @@ addEventListener("scroll",(e)=>{
 
     }
     if(window.scrollY < 966){
-        maininfo.style.transform = `translate(0,0)`;
-        secondsection_p.style.transform = `translate(0,0)`;
-        secondsection_h2.style.transform = `translate(0,0)`;
-        stars.style.transform = `translate(0,0)`;
         document.querySelector(".thirdsection").style.transform = `translate(0,0)`;
     }
     if(window.scrollY > 1600){

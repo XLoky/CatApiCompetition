@@ -95,13 +95,7 @@ addEventListener("scroll",(e)=>{
         document.querySelector(".maininfo__divImg").style.opacity = "1";
     }
     if(window.scrollY > 966 && window.scrollY < 1600){
-        maininfo.style.transform = `translate(${(window.scrollY - 966) ** 1.1}px,${-(window.scrollY - 966)}px)`;
-        secondsection_p.style.transform = `translate(${(window.scrollY - 966) ** 1.1}px,${-(window.scrollY - 966)}px)`;
-        secondsection_h2.style.transform = `translate(${(window.scrollY - 966) ** 1.1}px,${-(window.scrollY - 966)}px)`;
-        stars.style.transform = `translate(${(window.scrollY - 966) * 1.5}px,${-(window.scrollY - 966)}px)`;
-
         document.querySelector(".thirdsection").style.transform = `translate(${(window.scrollY - 1600) * 1.2}px, ${-(window.scrollY - 1600)}px)`;
-
     }
     if(window.scrollY < 966){
         document.querySelector(".thirdsection").style.transform = `translate(0,0)`;
